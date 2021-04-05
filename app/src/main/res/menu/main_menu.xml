@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/opt1"
+        android:title="@string/opt1"/>
+    <item
+        android:id="@+id/opt2"
+        android:title="@string/opt2"/>
+    <item
+        android:id="@+id/opt3"
+        android:title="@string/opt3"/>
+    <item
+        android:id="@+id/opt4"
+        android:title="@string/opt4"/>
+    <item
+        android:id="@+id/opt5"
+        android:title="@string/opt5"/>
+    <item
+        android:id="@+id/opt6"
+        android:title="@string/opt6"/>
+    <item
+        android:id="@+id/opt7"
+        android:title="@string/opt7"/>
+    <item
+        android:id="@+id/opt8"
+        android:title="@string/opt8"/>
+    <item
+        android:id="@+id/opt9"
+        android:title="@string/opt9"/>
+
+</menu>
