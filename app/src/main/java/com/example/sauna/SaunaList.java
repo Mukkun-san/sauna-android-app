@@ -64,7 +64,7 @@ public class SaunaList extends ArrayList<Sauna> {
     }
 
     protected static boolean loadFromFile(String path) throws Exception {
-        File file = new File(path, "sauna-list.txt");
+        //File file = new File(path, "sauna-list.txt");
         final boolean[] success = {false};
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -81,8 +81,8 @@ public class SaunaList extends ArrayList<Sauna> {
                             line = sc.nextLine();
                             s.add(line);
                         }
-                        addSauna(new Sauna(s.get(1), s.get(0), s.get(6), Integer.parseInt(s.get(2)),
-                              s.get(3), Double.parseDouble(s.get(4)), s.get(5)));
+                        addSauna(new Sauna(s.get(0), s.get(1), s.get(2), Integer.parseInt(s.get(3)),
+                              s.get(4), Double.parseDouble(s.get(5)), s.get(6)));
                     }
                     success[0] = true;
                 } catch (Exception e) {
