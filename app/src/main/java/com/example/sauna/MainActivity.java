@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.text.InputType;
 import android.view.Gravity;
 import android.view.Menu;
@@ -93,13 +94,13 @@ public class MainActivity extends AppCompatActivity {
                           @Override
                           public void callback() {
                               String code = inputDialogText1;
-                            if (code.length() == 0 ) return;
-                            if(SaunaList.getInstance().contains(new Sauna(code))){
-                                intent.putExtra("code",code);
-                                startActivity(intent);
-                            }else{
-                                Toast.makeText(context, "Product code doesn't exist.", Toast.LENGTH_SHORT).show();
-                            }
+                              if (code.length() == 0) return;
+                              if (SaunaList.getInstance().contains(new Sauna(code))) {
+                                  intent.putExtra("code", code);
+                                  startActivity(intent);
+                              } else {
+                                  Toast.makeText(context, "Product code doesn't exist.", Toast.LENGTH_SHORT).show();
+                              }
                           }
                       });
                 D.addInput(this, "Product Code", InputType.TYPE_CLASS_TEXT, 1);
@@ -204,8 +205,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(context, "There is no data to save.", Toast.LENGTH_SHORT).show();
                 } else {
                     try {
-                        SaunaList.saveToFile(getApplicationContext().getFilesDir().getPath());
-                        Toast.makeText(context, "Saved sauna list to file.", Toast.LENGTH_SHORT).show();
+                        String path = getApplicationContext().getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS).getPath();
+                        SaunaList.saveToFile(path);
+                        Toast.makeText(context, "Saved sauna list to file to:\n" + path, Toast.LENGTH_LONG).show();
 
                     } catch (IOException e) {
                         Toast.makeText(context, "Error saving list to file.", Toast.LENGTH_SHORT).show();
