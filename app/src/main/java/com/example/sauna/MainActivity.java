@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         TextView title = findViewById(R.id.listTitle);
         Context context = this;
         TextView listView = findViewById(R.id.opt1_listSauna);
-        listView.setTextSize(22);
+        listView.setTextSize(18);
         switch (item.getItemId()) {
             case R.id.opt1:  // Display List
                 TextView saunaListView = findViewById(R.id.opt1_listSauna);

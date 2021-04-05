@@ -43,11 +43,12 @@
             android:layout_gravity="center">
 
             <TextView
-                android:textSize="20dp"
                 android:layout_width="150dp"
                 android:layout_height="35dp"
                 android:gravity="right|center_vertical"
-                android:text="@string/opt3.make" />
+                android:text="@string/opt3.make"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/display_make"
@@ -66,11 +67,12 @@
             android:layout_gravity="center">
 
             <TextView
-                android:textSize="20dp"
                 android:layout_width="150dp"
                 android:layout_height="35dp"
                 android:gravity="right|center_vertical"
-                android:text="@string/opt3.code" />
+                android:text="@string/opt3.code"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/display_code"
@@ -89,11 +91,12 @@
             android:layout_gravity="center">
 
             <TextView
-                android:textSize="20dp"
                 android:layout_width="150dp"
                 android:layout_height="35dp"
                 android:gravity="right|center_vertical"
-                android:text="@string/opt3.woodType" />
+                android:text="@string/opt3.woodType"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/display_woodType"
@@ -114,11 +117,12 @@
             android:layout_gravity="center">
 
             <TextView
-                android:textSize="20dp"
                 android:layout_width="150dp"
                 android:layout_height="35dp"
                 android:gravity="right|center_vertical"
-                android:text="@string/opt3.capacity" />
+                android:text="@string/opt3.capacity"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/display_capacity"
@@ -138,11 +142,12 @@
             android:layout_gravity="center">
 
             <TextView
-                android:textSize="20dp"
                 android:layout_width="150dp"
                 android:layout_height="35dp"
                 android:gravity="right|center_vertical"
-                android:text="@string/opt3.heating" />
+                android:text="@string/opt3.heating"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/display_heating"
@@ -167,7 +172,8 @@
                 android:layout_height="35dp"
                 android:gravity="right|center_vertical"
                 android:text="@string/opt3.price"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/display_price"
